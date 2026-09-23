@@ -1,578 +1,148 @@
-<!doctype html>
-<html lang="es-MX">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="EcoAlerta Tehuacán: información, educación y participación ciudadana para cuidar el entorno de nuestra región.">
-  <title>EcoAlerta Tehuacán | Cuidemos nuestro entorno</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="styles.css">
-
-  <style>
-    :root {
-      --eco-ink: #17342f;
-      --eco-green: #1f765c;
-      --eco-mint: #dff1e6;
-      --eco-yellow: #f4c95d;
-      --eco-coral: #e76f51;
-      --eco-paper: #f7f5ef;
-      --eco-line: #d8e1da;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: var(--eco-paper);
-      color: var(--eco-ink);
-      font-family: "DM Sans", sans-serif;
-    }
-
-    h1, h2, h3, h4, .navbar-brand {
-      font-family: "Space Grotesk", sans-serif;
-    }
-
-    .navbar {
-      background: rgba(247, 245, 239, .94);
-      border-bottom: 1px solid var(--eco-line);
-      backdrop-filter: blur(10px);
-    }
-
-    .navbar-brand {
-      color: var(--eco-ink);
-      font-weight: 700;
-      letter-spacing: -.04em;
-    }
-
-    .brand-mark {
-      display: inline-grid;
-      width: 2.25rem;
-      height: 2.25rem;
-      margin-right: .45rem;
-      place-items: center;
-      border-radius: 50%;
-      background: var(--eco-green);
-      color: #fff;
-      font-size: 1.15rem;
-    }
-
-    .nav-link {
-      color: var(--eco-ink);
-      font-weight: 600;
-    }
-
-    .nav-link:hover, .nav-link:focus {
-      color: var(--eco-green);
-    }
-
-    .hero {
-      overflow: hidden;
-      padding: 7rem 0 5rem;
-      background:
-        linear-gradient(110deg, rgba(223, 241, 230, .96), rgba(247, 245, 239, .78)),
-        radial-gradient(circle at 87% 20%, rgba(244, 201, 93, .65), transparent 22rem);
-    }
-
-    .eyebrow {
-      color: var(--eco-green);
-      font-size: .78rem;
-      font-weight: 700;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-
-    .hero h1 {
-      max-width: 47rem;
-      font-size: clamp(2.75rem, 6vw, 5.5rem);
-      letter-spacing: -.07em;
-      line-height: .98;
-    }
-
-    .hero-copy {
-      max-width: 38rem;
-      color: #46605a;
-      font-size: 1.15rem;
-    }
-
-    .hero-panel {
-      position: relative;
-      min-height: 20rem;
-      padding: 1.5rem;
-      border: 1px solid rgba(31, 118, 92, .2);
-      border-radius: 1.25rem;
-      background: #fffdf8;
-      box-shadow: 0 1.5rem 3rem rgba(23, 52, 47, .12);
-    }
-
-    .hero-panel::after {
-      position: absolute;
-      right: -2.5rem;
-      bottom: -3rem;
-      width: 9rem;
-      height: 9rem;
-      border-radius: 50%;
-      background: var(--eco-yellow);
-      content: "";
-      opacity: .8;
-      z-index: 0;
-    }
-
-    .hero-panel-content {
-      position: relative;
-      z-index: 1;
-    }
-
-    .status-dot {
-      display: inline-block;
-      width: .65rem;
-      height: .65rem;
-      border-radius: 50%;
-      background: #36a269;
-      box-shadow: 0 0 0 .3rem rgba(54, 162, 105, .16);
-    }
-
-    .btn-eco {
-      border: 0;
-      background: var(--eco-green);
-      color: #fff;
-      font-weight: 700;
-    }
-
-    .btn-eco:hover, .btn-eco:focus {
-      background: #175b47;
-      color: #fff;
-    }
-
-    .btn-outline-eco {
-      border-color: var(--eco-green);
-      color: var(--eco-green);
-      font-weight: 700;
-    }
-
-    .btn-outline-eco:hover, .btn-outline-eco:focus {
-      background: var(--eco-green);
-      color: #fff;
-    }
-
-    .section-pad {
-      padding: 5.5rem 0;
-    }
-
-    .section-heading {
-      max-width: 42rem;
-    }
-
-    .section-heading h2 {
-      letter-spacing: -.05em;
-    }
-
-    .feature-card, .alert-card, .resource-card {
-      height: 100%;
-      border: 1px solid var(--eco-line);
-      border-radius: .85rem;
-      background: #fffdf8;
-    }
-
-    .feature-card {
-      padding: 1.5rem;
-    }
-
-    .icon-box {
-      display: inline-grid;
-      width: 3rem;
-      height: 3rem;
-      place-items: center;
-      border-radius: .75rem;
-      background: var(--eco-mint);
-      color: var(--eco-green);
-      font-size: 1.35rem;
-    }
-
-    .alert-card {
-      overflow: hidden;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-
-    .alert-card:hover {
-      transform: translateY(-.25rem);
-      box-shadow: 0 .75rem 1.5rem rgba(23, 52, 47, .09);
-    }
-
-    .alert-card-body {
-      padding: 1.35rem;
-    }
-
-    .alert-image {
-      min-height: 8rem;
-      padding: 1.25rem;
-      background: linear-gradient(135deg, #b9dfc7, #f6d477);
-      color: var(--eco-ink);
-    }
-
-    .alert-image.water {
-      background: linear-gradient(135deg, #b6dce4, #78b6b8);
-    }
-
-    .alert-image.air {
-      background: linear-gradient(135deg, #d5d9be, #efb28f);
-    }
-
-    .badge-soft {
-      background: var(--eco-mint);
-      color: var(--eco-green);
-      font-weight: 700;
-    }
-
-    .impact-band {
-      background: var(--eco-ink);
-      color: #fff;
-    }
-
-    .impact-number {
-      color: var(--eco-yellow);
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 2.75rem;
-      font-weight: 700;
-      letter-spacing: -.06em;
-    }
-
-    .resource-card {
-      padding: 1.5rem;
-    }
-
-    .resource-card a {
-      color: var(--eco-green);
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .report-section {
-      background: #e9f3eb;
-    }
-
-    .report-box {
-      padding: clamp(1.5rem, 4vw, 3.5rem);
-      border-radius: 1rem;
-      background: var(--eco-green);
-      color: #fff;
-    }
-
-    .form-control, .form-select {
-      border-color: var(--eco-line);
-      border-radius: .6rem;
-      padding: .75rem .9rem;
-    }
-
-    .form-control:focus, .form-select:focus {
-      border-color: var(--eco-green);
-      box-shadow: 0 0 0 .2rem rgba(31, 118, 92, .15);
-    }
-
-    footer {
-      background: #102a26;
-      color: #dce8df;
-    }
-
-    footer a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    @media (max-width: 991.98px) {
-      .hero {
-        padding-top: 5.5rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional | Cristina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0f5132;
+            --accent-color: #198754;
+            --bg-light: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: #333; }
+        .hero { background: linear-gradient(135deg, #0f5132, #198754); color: white; padding: 80px 0; }
+        .card-custom { border: none; border-radius: 12px; transition: transform 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .card-custom:hover { transform: translateY(-5px); }
+        .badge-tech { background-color: #e8f5e9; color: var(--primary-color); font-weight: 600; padding: 6px 12px; margin: 3px; border-radius: 20px; display: inline-block; }
+    </style>
 </head>
-
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Navegación principal">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#inicio" aria-label="EcoAlerta Tehuacán, inicio">
-          <span class="brand-mark" aria-hidden="true"><i class="bi bi-leaf"></i></span>
-          EcoAlerta <span class="ms-1 fw-normal">Tehuacán</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-            <li class="nav-item"><a class="nav-link" href="#alertas">Alertas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#aprende">Aprende</a></li>
-            <li class="nav-item"><a class="nav-link" href="#participa">Participa</a></li>
-            <li class="nav-item"><a class="btn btn-eco px-3" href="#contacto">Contactar</a></li>
-          </ul>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark style="background-color: #0f5132;" sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Portafolio | Cristina</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
 
-  <main id="inicio">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-7">
-            <p class="eyebrow mb-3">Información ambiental local</p>
-            <h1 id="hero-title" class="mb-4">Cuidar Tehuacán empieza por estar alerta.</h1>
-            <p class="hero-copy mb-4">Conoce lo que sucede en nuestro entorno, aprende a protegerlo y participa en las soluciones que hacen más saludable nuestra comunidad.</p>
-            <div class="d-flex flex-wrap gap-3">
-              <a class="btn btn-eco btn-lg px-4" href="#alertas">Ver alertas <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></a>
-              <a class="btn btn-outline-eco btn-lg px-4" href="#participa">Reportar un problema</a>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="hero-panel">
-              <div class="hero-panel-content">
-                <div class="d-flex align-items-center gap-2 mb-4">
-                  <span class="status-dot" aria-hidden="true"></span>
-                  <span class="fw-bold">Estado de la comunidad</span>
+    <!-- Header / Sobre Mí -->
+    <header id="sobre-mi" class="hero text-center text-md-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">¡Hola! Soy Cristina 👋</h1>
+                    <p class="lead">Desarrolladora Web & Creadora de Soluciones Digitales</p>
+                    <p>Apasionada por la tecnología, el diseño UI/UX y el desarrollo de software. Me especializo en construir aplicaciones funcionales, intuitivas y enfocadas en resolver problemas reales.</p>
+                    <a href="#proyectos" class="btn btn-light btn-lg mt-3 text-success fw-bold">Ver mis proyectos</a>
                 </div>
-                <p class="text-secondary mb-2">Hoy puedes contribuir con una acción sencilla:</p>
-                <h2 class="h3 mb-4">Observa, informa y comparte.</h2>
-                <div class="d-flex gap-3 align-items-start border-top pt-3">
-                  <i class="bi bi-megaphone fs-4 text-success" aria-hidden="true"></i>
-                  <p class="small mb-0">Un reporte ciudadano ayuda a identificar problemas y dirigir la atención hacia donde más se necesita.</p>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+    </header>
+
+    <!-- Habilidades Tecnológicas -->
+    <section id="habilidades" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4" style="color: var(--primary-color);">Habilidades Tecnológicas</h2>
+            <div class="row text-center g-3">
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-white rounded shadow-sm">
+                        <h5>Front-End</h5>
+                        <span class="badge-tech">HTML5</span>
+                        <span class="badge-tech">CSS3</span>
+                        <span class="badge-tech">JavaScript</span>
+                        <span class="badge-tech">Bootstrap 5</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-white rounded shadow-sm">
+                        <h5>Herramientas</h5>
+                        <span class="badge-tech">Git</span>
+                        <span class="badge-tech">GitHub</span>
+                        <span class="badge-tech">VS Code</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-white rounded shadow-sm">
+                        <h5>Almacenamiento</h5>
+                        <span class="badge-tech">LocalStorage</span>
+                        <span class="badge-tech">JSON</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-white rounded shadow-sm">
+                        <h5>Metodologías</h5>
+                        <span class="badge-tech">UI / UX</span>
+                        <span class="badge-tech">Diseño Responsive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="section-pad" aria-labelledby="why-title">
-      <div class="container">
-        <div class="section-heading mb-5">
-          <p class="eyebrow mb-2">Una comunidad informada</p>
-          <h2 id="why-title" class="display-6">Información clara para tomar mejores decisiones.</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <article class="feature-card">
-              <span class="icon-box mb-4"><i class="bi bi-broadcast" aria-hidden="true"></i></span>
-              <h3 class="h4">Mantente al tanto</h3>
-              <p class="text-secondary mb-0">Consulta información ambiental relevante para Tehuacán y sus comunidades.</p>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="feature-card">
-              <span class="icon-box mb-4"><i class="bi bi-book" aria-hidden="true"></i></span>
-              <h3 class="h4">Aprende en comunidad</h3>
-              <p class="text-secondary mb-0">Encuentra recursos prácticos para reducir tu impacto y cuidar los ecosistemas locales.</p>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="feature-card">
-              <span class="icon-box mb-4"><i class="bi bi-people" aria-hidden="true"></i></span>
-              <h3 class="h4">Haz que tu voz cuente</h3>
-              <p class="text-secondary mb-0">Reporta situaciones que afecten el ambiente y promueve una respuesta colaborativa.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="alertas" class="section-pad pt-0" aria-labelledby="alerts-title">
-      <div class="container">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
-          <div class="section-heading">
-            <p class="eyebrow mb-2">Centro de información</p>
-            <h2 id="alerts-title" class="display-6 mb-2">Alertas y temas prioritarios</h2>
-            <p class="text-secondary mb-0">Una estructura preparada para incorporar reportes y actualizaciones verificadas.</p>
-          </div>
-          <span class="badge rounded-pill badge-soft px-3 py-2">Contenido de demostración</span>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <article class="alert-card">
-              <div class="alert-image d-flex justify-content-between align-items-start">
-                <i class="bi bi-trash3 fs-1" aria-hidden="true"></i>
-                <span class="badge text-bg-warning">Residuos</span>
-              </div>
-              <div class="alert-card-body">
-                <p class="small text-secondary mb-2">Tema comunitario</p>
-                <h3 class="h5">Separación y disposición responsable</h3>
-                <p class="text-secondary">Conoce prácticas sencillas para reducir residuos y mantener limpios los espacios compartidos.</p>
-                <a class="link-success fw-bold text-decoration-none" href="#aprende">Leer recurso <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="alert-card">
-              <div class="alert-image water d-flex justify-content-between align-items-start">
-                <i class="bi bi-droplet fs-1" aria-hidden="true"></i>
-                <span class="badge text-bg-info">Agua</span>
-              </div>
-              <div class="alert-card-body">
-                <p class="small text-secondary mb-2">Tema comunitario</p>
-                <h3 class="h5">Cuidado del agua</h3>
-                <p class="text-secondary">Identifica hábitos de ahorro y comparte información útil para proteger este recurso.</p>
-                <a class="link-success fw-bold text-decoration-none" href="#aprende">Ver recomendaciones <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="alert-card">
-              <div class="alert-image air d-flex justify-content-between align-items-start">
-                <i class="bi bi-wind fs-1" aria-hidden="true"></i>
-                <span class="badge text-bg-secondary">Aire</span>
-              </div>
-              <div class="alert-card-body">
-                <p class="small text-secondary mb-2">Tema comunitario</p>
-                <h3 class="h5">Calidad del aire</h3>
-                <p class="text-secondary">Consulta buenas prácticas para disminuir emisiones y cuidar la salud de la comunidad.</p>
-                <a class="link-success fw-bold text-decoration-none" href="#participa">Participar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="impact-band py-5" aria-label="Impacto comunitario">
-      <div class="container">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-5">
-            <p class="eyebrow text-warning mb-2">El cambio se construye juntos</p>
-            <h2 class="h2 mb-0">Cada observación puede convertirse en una acción.</h2>
-          </div>
-          <div class="col-lg-7">
+    <!-- Proyectos Destacados -->
+    <section id="proyectos" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5" style="color: var(--primary-color);">Proyectos Destacados</h2>
             <div class="row g-4">
-              <div class="col-6 col-md-4"><div class="impact-number">01</div><p class="mb-0">Observa tu entorno</p></div>
-              <div class="col-6 col-md-4"><div class="impact-number">02</div><p class="mb-0">Comparte información</p></div>
-              <div class="col-6 col-md-4"><div class="impact-number">03</div><p class="mb-0">Participa en soluciones</p></div>
+                <div class="col-md-6">
+                    <div class="card card-custom h-100 p-4">
+                        <h3 class="fw-bold text-success">🌿 EcoAlerta Tehuacán</h3>
+                        <p class="text-muted">Plataforma web comunitaria de gestión ambiental e incidencias urbanas.</p>
+                        <ul>
+                            <li>Filtros dinámicos de rutas de recolección de basura y agua.</li>
+                            <li>Formulario de reportes ciudadanos con almacenamiento en `LocalStorage`.</li>
+                            <li>Diseño adaptativo Mobile-First con Bootstrap.</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <span class="badge-tech">HTML/CSS</span>
+                            <span class="badge-tech">JS</span>
+                            <span class="badge-tech">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom h-100 p-4">
+                        <h3 class="fw-bold text-success">📱 Prototipo de Sistema Web</h3>
+                        <p class="text-muted">Desarrollo y diseño de interfaz funcional con despliegue continuo.</p>
+                        <ul>
+                            <li>Control de versiones mediante Git y GitHub.</li>
+                            <li>Publicación y alojamiento global en la nube con GitHub Pages.</li>
+                            <li>Arquitectura limpia de archivos web.</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <span class="badge-tech">Git</span>
+                            <span class="badge-tech">GitHub Pages</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section id="aprende" class="section-pad" aria-labelledby="learn-title">
-      <div class="container">
-        <div class="section-heading mb-5">
-          <p class="eyebrow mb-2">Caja de herramientas</p>
-          <h2 id="learn-title" class="display-6">Aprende algo útil para aplicar hoy.</h2>
+    <!-- Contacto -->
+    <footer id="contacto" class="py-5 text-white" style="background-color: #0f5132;">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">¿Hablamos?</h2>
+            <p>Estoy disponible para proyectos, colaboraciones y nuevas oportunidades profesionales.</p>
+            <p class="mb-4"><strong>GitHub:</strong> <a href="https://github.com/Kristi03lua" class="text-white">@Kristi03lua</a></p>
+            <p class="small text-white-50">© 2026 Cristina — Portafolio Profesional</p>
         </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <article class="resource-card">
-              <i class="bi bi-house-heart fs-2 text-success" aria-hidden="true"></i>
-              <h3 class="h5 mt-4">En casa</h3>
-              <p class="text-secondary">Ideas para ahorrar agua, energía y reducir residuos desde tu hogar.</p>
-              <a href="#contacto">Próximamente <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="resource-card">
-              <i class="bi bi-tree fs-2 text-success" aria-hidden="true"></i>
-              <h3 class="h5 mt-4">En tu colonia</h3>
-              <p class="text-secondary">Organiza acciones vecinales y ayuda a proteger los espacios comunes.</p>
-              <a href="#contacto">Próximamente <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="resource-card">
-              <i class="bi bi-mortarboard fs-2 text-success" aria-hidden="true"></i>
-              <h3 class="h5 mt-4">En la escuela</h3>
-              <p class="text-secondary">Materiales para conversar sobre el ambiente y convertir ideas en proyectos.</p>
-              <a href="#contacto">Próximamente <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
+    </footer>
 
-    <section id="participa" class="report-section section-pad" aria-labelledby="report-title">
-      <div class="container">
-        <div class="report-box">
-          <div class="row align-items-center g-4">
-            <div class="col-lg-6">
-              <p class="eyebrow text-warning mb-2">Participación ciudadana</p>
-              <h2 id="report-title" class="display-6">¿Viste algo que debemos atender?</h2>
-              <p class="mb-0 opacity-75">Comparte los detalles del problema ambiental. Este formulario es una interfaz inicial para organizar futuros reportes.</p>
-            </div>
-            <div class="col-lg-6">
-              <form id="reportForm" class="bg-white text-dark rounded-3 p-4 needs-validation" action="#" method="post" novalidate>
-                <div class="mb-3">
-                  <label class="form-label fw-semibold" for="reportType">Tipo de reporte</label>
-                  <select class="form-select" id="reportType" name="reportType" required>
-                    <option value="" selected disabled>Selecciona una opción</option>
-                    <option>Residuos</option>
-                    <option>Agua</option>
-                    <option>Aire</option>
-                    <option>Otro</option>
-                  </select>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label fw-semibold" for="reportLocation">Colonia de Tehuacán</label>
-                  <select class="form-select" id="reportLocation" name="reportLocation" required>
-                    <option value="" selected disabled>Cargando colonias...</option>
-                  </select>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label fw-semibold" for="reportDetails">Descripción</label>
-                  <textarea class="form-control" id="reportDetails" name="reportDetails" rows="3" placeholder="Cuéntanos qué observaste" required></textarea>
-                </div>
-                <button class="btn btn-eco w-100" type="submit">Enviar reporte <i class="bi bi-send ms-2" aria-hidden="true"></i></button>
-                <div id="reportFeedback" role="status" hidden></div>
-              </form>
-              <div class="mt-4">
-                <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
-                  <h3 class="h5 mb-0">Reportes guardados</h3>
-                  <span id="reportsCount" class="small text-white-50">0 reportes</span>
-                </div>
-                <label class="visually-hidden" for="colonyFilter">Filtrar reportes por colonia</label>
-                <select class="form-select mb-3" id="colonyFilter" aria-label="Filtrar reportes por colonia">
-                  <option value="">Todas las colonias</option>
-                </select>
-                <div id="reportsEmpty" class="small opacity-75">Todavía no hay reportes guardados en este dispositivo.</div>
-                <div id="reportsList" aria-live="polite"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="contacto" class="py-5">
-    <div class="container">
-      <div class="row g-4 justify-content-between">
-        <div class="col-lg-5">
-          <a class="navbar-brand text-white d-inline-flex align-items-center mb-3" href="#inicio">
-            <span class="brand-mark"><i class="bi bi-leaf" aria-hidden="true"></i></span>
-            EcoAlerta <span class="ms-1 fw-normal">Tehuacán</span>
-          </a>
-          <p class="mb-0 opacity-75">Una plataforma comunitaria para informar, aprender y participar por el cuidado ambiental de nuestra región.</p>
-        </div>
-        <div class="col-sm-5 col-lg-3">
-          <h2 class="h6 text-white">Explora</h2>
-          <ul class="list-unstyled small lh-lg mb-0">
-            <li><a href="#alertas">Alertas ambientales</a></li>
-            <li><a href="#aprende">Recursos educativos</a></li>
-            <li><a href="#participa">Reportar un problema</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-5 col-lg-3">
-          <h2 class="h6 text-white">Contacto</h2>
-          <p class="small opacity-75 mb-2">Agrega aquí el correo y las redes oficiales del proyecto.</p>
-          <a class="small" href="mailto:contacto@ecoalerta-tehuacan.mx">contacto@ecoalerta-tehuacan.mx</a>
-        </div>
-      </div>
-      <hr class="border-light opacity-25 my-4">
-      <p class="small opacity-75 mb-0">&copy; 2026 EcoAlerta Tehuacán. Proyecto informativo en desarrollo.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
 </html>
