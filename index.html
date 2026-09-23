@@ -6,11 +6,14 @@
     <title>Portafolio Profesional | Cristina</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         :root {
-            --primary-color: #0f5132;
-            --accent-color: #198754;
-            --bg-light: #f8f9fa;
+            --primary-color: #6a1b9a;    /* Lila oscuro elegante */
+            --accent-color: #ab47bc;     /* Lila vibrante */
+            --light-lila: #f3e5f5;       /* Fondo lila muy claro */
+            --bg-light: #fcf8ff;         /* Fondo suave */
         }
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -18,9 +21,9 @@
             color: #333; 
         }
         .hero { 
-            background: linear-gradient(135deg, #0f5132, #198754); 
+            background: linear-gradient(135deg, #4a148c, #8e24aa); 
             color: white; 
-            padding: 70px 0; 
+            padding: 75px 0; 
         }
         .profile-img { 
             width: 200px; 
@@ -28,32 +31,39 @@
             object-fit: cover; 
             border-radius: 50%; 
             border: 5px solid white; 
-            box-shadow: 0 6px 20px rgba(0,0,0,0.25); 
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3); 
         }
         .card-custom { 
             border: none; 
             border-radius: 12px; 
             transition: transform 0.2s; 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+            box-shadow: 0 4px 15px rgba(106, 27, 154, 0.08); 
         }
         .card-custom:hover { 
             transform: translateY(-5px); 
         }
         .badge-tech { 
-            background-color: #e8f5e9; 
+            background-color: var(--light-lila); 
             color: var(--primary-color); 
             font-weight: 600; 
-            padding: 6px 12px; 
+            padding: 6px 14px; 
             margin: 3px; 
             border-radius: 20px; 
             display: inline-block; 
+        }
+        .edu-box {
+            background-color: white;
+            border-left: 5px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
         }
     </style>
 </head>
 <body>
 
     <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #0f5132;">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #4a148c;">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Portafolio | Cristina</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -62,6 +72,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
                     <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
                     <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
@@ -75,18 +86,40 @@
         <div class="container">
             <div class="row align-items-center g-4">
                 <div class="col-md-4 text-center">
-                    <!-- Foto de Perfil Profesional -->
                     <img src="cristina-foto.jpg" alt="Cristina" class="profile-img">
                 </div>
                 <div class="col-md-8">
                     <h1 class="display-4 fw-bold">¡Hola! Soy Cristina 👋</h1>
-                    <p class="lead">Desarrolladora Web & Creadora de Soluciones Digitales</p>
-                    <p>Apasionada por la tecnología, el diseño UI/UX y el desarrollo de software. Me especializo en construir aplicaciones funcionales, intuitivas y enfocadas en resolver problemas reales.</p>
-                    <a href="#proyectos" class="btn btn-light btn-lg mt-2 text-success fw-bold">Ver mis proyectos</a>
+                    <p class="lead fw-semibold" style="color: #e1bee7;">Desarrolladora de Software Multiplataforma</p>
+                    <p>Estudiante apasionada por la tecnología, la creación de bases de datos, el diseño UI/UX y el desarrollo web. Me especializo en construir soluciones digitales intuitivas y eficientes para resolver problemas reales.</p>
+                    <a href="#proyectos" class="btn btn-light btn-lg mt-2 fw-bold" style="color: var(--primary-color);">Ver mis proyectos</a>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- Formación Académica -->
+    <section id="educacion" class="py-5" style="background-color: var(--light-lila);">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4" style="color: var(--primary-color);">Formación Académica</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="edu-box">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-mortarboard-fill me-3 fs-2" style="color: var(--primary-color);"></i>
+                            <div>
+                                <h4 class="fw-bold mb-0" style="color: var(--primary-color);">Universidad Tecnológica de Tehuacán</h4>
+                                <p class="mb-0 fw-semibold text-muted">T.S.U. en Desarrollo de Software Multiplataforma</p>
+                            </div>
+                        </div>
+                        <p class="mt-3 mb-0 small text-secondary">
+                            Enfoque en desarrollo web, bases de datos relacionales, ingeniería de software, arquitectura limpias y diseño de interfaces adaptativas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Habilidades Tecnológicas -->
     <section id="habilidades" class="py-5">
@@ -95,7 +128,7 @@
             <div class="row text-center g-3">
                 <div class="col-6 col-md-3">
                     <div class="p-3 bg-white rounded shadow-sm h-100">
-                        <h5>Front-End</h5>
+                        <h5 class="fw-bold" style="color: var(--primary-color);">Front-End</h5>
                         <span class="badge-tech">HTML5</span>
                         <span class="badge-tech">CSS3</span>
                         <span class="badge-tech">JavaScript</span>
@@ -104,7 +137,7 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="p-3 bg-white rounded shadow-sm h-100">
-                        <h5>Herramientas</h5>
+                        <h5 class="fw-bold" style="color: var(--primary-color);">Herramientas</h5>
                         <span class="badge-tech">Git</span>
                         <span class="badge-tech">GitHub</span>
                         <span class="badge-tech">VS Code</span>
@@ -112,16 +145,18 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="p-3 bg-white rounded shadow-sm h-100">
-                        <h5>Almacenamiento</h5>
+                        <h5 class="fw-bold" style="color: var(--primary-color);">Base de Datos</h5>
+                        <span class="badge-tech">MySQL</span>
+                        <span class="badge-tech">MariaDB</span>
                         <span class="badge-tech">LocalStorage</span>
-                        <span class="badge-tech">JSON</span>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="p-3 bg-white rounded shadow-sm h-100">
-                        <h5>Metodologías</h5>
+                        <h5 class="fw-bold" style="color: var(--primary-color);">Diseño & UX</h5>
                         <span class="badge-tech">UI / UX</span>
                         <span class="badge-tech">Diseño Responsive</span>
+                        <span class="badge-tech">Wireframing</span>
                     </div>
                 </div>
             </div>
@@ -135,31 +170,32 @@
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="card card-custom h-100 p-4">
-                        <h3 class="fw-bold text-success">🌿 EcoAlerta Tehuacán</h3>
+                        <h3 class="fw-bold" style="color: var(--primary-color);">🌿 EcoAlerta Tehuacán</h3>
                         <p class="text-muted">Plataforma web comunitaria de gestión ambiental e incidencias urbanas.</p>
                         <ul>
-                            <li>Filtros dinámicos de rutas de recolección de basura y agua.</li>
-                            <li>Formulario de reportes ciudadanos con almacenamiento en LocalStorage.</li>
-                            <li>Diseño adaptativo Mobile-First con Bootstrap.</li>
+                            <li>Filtros dinámicos de rutas de recolección de basura y distribución de agua.</li>
+                            <li>Formulario de reportes ciudadanos con persistencia local en `LocalStorage`.</li>
+                            <li>Diseño responsivo optimizado para móviles utilizando Bootstrap.</li>
                         </ul>
                         <div class="mt-auto">
                             <span class="badge-tech">HTML/CSS</span>
-                            <span class="badge-tech">JS</span>
+                            <span class="badge-tech">JavaScript</span>
                             <span class="badge-tech">Bootstrap</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card card-custom h-100 p-4">
-                        <h3 class="fw-bold text-success">📱 Prototipo de Sistema Web</h3>
-                        <p class="text-muted">Desarrollo y diseño de interfaz funcional con despliegue continuo.</p>
+                        <h3 class="fw-bold" style="color: var(--primary-color);">📱 KEST - Sistema de Inventarios</h3>
+                        <p class="text-muted">Diseño de interfaz y prototipo para sistema de gestión de inventarios y alertas.</p>
                         <ul>
-                            <li>Control de versiones mediante Git y GitHub.</li>
-                            <li>Publicación y alojamiento global en la nube con GitHub Pages.</li>
-                            <li>Arquitectura limpia de archivos web.</li>
+                            <li>Diseño intuitivo enfocado en la usabilidad y experiencia de usuario.</li>
+                            <li>Control de versiones y repositorio público administrado en GitHub.</li>
+                            <li>Despliegue continuo publicado globalmente en GitHub Pages.</li>
                         </ul>
                         <div class="mt-auto">
-                            <span class="badge-tech">Git</span>
+                            <span class="badge-tech">UI/UX</span>
+                            <span class="badge-tech">Git & GitHub</span>
                             <span class="badge-tech">GitHub Pages</span>
                         </div>
                     </div>
@@ -169,12 +205,12 @@
     </section>
 
     <!-- Contacto -->
-    <footer id="contacto" class="py-5 text-white" style="background-color: #0f5132;">
+    <footer id="contacto" class="py-5 text-white" style="background-color: #4a148c;">
         <div class="container text-center">
             <h2 class="fw-bold mb-3">¿Hablamos?</h2>
-            <p>Estoy disponible para proyectos, colaboraciones y nuevas oportunidades profesionales.</p>
+            <p style="color: #e1bee7;">Estoy disponible para proyectos, colaboraciones y nuevas oportunidades profesionales.</p>
             <p class="mb-4"><strong>GitHub:</strong> <a href="https://github.com/Kristi03lua" class="text-white" target="_blank">@Kristi03lua</a></p>
-            <p class="small text-white-50">© 2026 Cristina — Portafolio Profesional</p>
+            <p class="small opacity-75">© 2026 Cristina — Universidad Tecnológica de Tehuacán</p>
         </div>
     </footer>
 
