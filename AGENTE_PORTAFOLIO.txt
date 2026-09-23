@@ -1,0 +1,797 @@
+AGENTE_PORTAFOLIO
+
+# PARTE 1. IDENTIFICACIÓN DEL PROYECTO
+
+Antes de configurar el agente, define claramente el proyecto.
+
+### 1.1 Nombre del proyecto
+
+**Nombre:**
+
+`________________________________________________________`
+
+### 1.2 Tipo de proyecto
+
+Marca una opción:
+
+* [ ] Portafolio profesional
+* [ ] Página web empresarial
+* [ ] Página web para un negocio
+* [ ] Página web informativa
+* [ ] Tienda Front-End
+* [ ] Aplicación web
+* [ ] Otro: `____________________________`
+
+### 1.3 Descripción del proyecto
+
+Explica brevemente qué vas a desarrollar.
+
+**¿Qué vas a desarrollar?**
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+### 1.4 Problema o necesidad
+
+¿Qué necesidad pretende resolver tu proyecto?
+
+**Problema o necesidad:**
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+### 1.5 Público objetivo
+
+¿Quién utilizará o visitará tu proyecto?
+
+**Usuarios principales:**
+
+`________________________________________________________`
+
+### 1.6 Resultado esperado
+
+¿Qué esperas conseguir con el proyecto?
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+---
+
+# PARTE 2. CONFIGURACIÓN DEL AGENTE
+
+## 1. IDENTIDAD / ROL
+
+Define quién será tu agente y qué funciones desempeñará.
+
+### Nombre del agente
+
+Ejemplo:
+
+`AGENTE-PORTAFOLIO`
+
+Tu propuesta:
+
+**Nombre:**
+
+`________________________________________________________`
+
+### Rol principal
+
+Completa:
+
+> Actúa como un agente especializado en:
+
+`________________________________________________________`
+
+### Funciones que desempeñará
+
+Selecciona las funciones que necesitarás:
+
+* [ ] Analista de requerimientos
+* [ ] Diseñador UX
+* [ ] Diseñador UI
+* [ ] Desarrollador Front-End
+* [ ] Especialista en HTML5
+* [ ] Especialista en CSS3
+* [ ] Especialista en Bootstrap
+* [ ] Especialista en JavaScript
+* [ ] Especialista en diseño responsive
+* [ ] Especialista en accesibilidad
+* [ ] Probador
+* [ ] Revisor de código
+* [ ] Documentador
+* [ ] Otro: `____________________________`
+
+### Responsabilidad principal del agente
+
+Completa:
+
+> El agente será responsable de:
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+---
+
+# 2. OBJETIVO
+
+El objetivo debe indicar **qué resultado debe conseguir el agente**.
+
+### Objetivo general
+
+Completa:
+
+> El objetivo del agente es desarrollar:
+
+`________________________________________________________`
+
+> para:
+
+`________________________________________________________`
+
+> logrando que:
+
+`________________________________________________________`
+
+### Preguntas de apoyo
+
+* ¿Qué debe entregar?
+* ¿Para quién?
+* ¿Qué problema resuelve?
+* ¿Qué características debe cumplir?
+
+---
+
+# 3. CONTEXTO
+
+Explica la situación en la que surge el proyecto.
+
+### Situación actual
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+### Necesidad detectada
+
+`________________________________________________________`
+
+### Usuarios
+
+`________________________________________________________`
+
+### Características importantes del proyecto
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+### Tecnologías disponibles
+
+Marca las que utilizarás:
+
+* [ ] HTML5
+* [ ] CSS3
+* [ ] Bootstrap 5.3
+* [ ] JavaScript
+* [ ] Git
+* [ ] GitHub
+* [ ] PHP
+* [ ] Laravel
+* [ ] MySQL
+* [ ] Otra: `________________`
+
+---
+
+# 4. ALCANCE
+
+Define claramente **qué hará y qué NO hará el agente**.
+
+## 4.1 El agente SÍ trabajará en:
+
+1. `________________________________________________`
+2. `________________________________________________`
+3. `________________________________________________`
+4. `________________________________________________`
+5. `________________________________________________`
+
+## 4.2 El agente NO trabajará en:
+
+1. `________________________________________________`
+2. `________________________________________________`
+3. `________________________________________________`
+4. `________________________________________________`
+5. `________________________________________________`
+
+### Pregunta clave
+
+> ¿Qué actividades o tecnologías podrían hacer que el proyecto se salga de su objetivo?
+
+`________________________________________________________`
+
+---
+
+# 5. ENTRADAS
+
+Las entradas son los datos que el alumno debe proporcionar al agente para que pueda trabajar correctamente.
+
+## 5.1 Información del proyecto
+
+| Dato             | Información |
+| ---------------- | ----------- |
+| Nombre           |             |
+| Descripción      |             |
+| Objetivo         |             |
+| Público objetivo |             |
+| Problema         |             |
+| Necesidad        |             |
+
+## 5.2 Información específica
+
+Dependiendo del proyecto, proporciona:
+
+### Información personal/profesional
+
+`________________________________________________________`
+
+### Información del negocio
+
+`________________________________________________________`
+
+### Productos o servicios
+
+`________________________________________________________`
+
+### Imágenes
+
+`________________________________________________________`
+
+### Contacto
+
+`________________________________________________________`
+
+### Redes sociales
+
+`________________________________________________________`
+
+### Información adicional
+
+`________________________________________________________`
+
+---
+
+# 6. INSTRUCCIONES DE TRABAJO
+
+En esta sección debes convertir las capacidades necesarias en **instrucciones concretas para el agente**.
+
+No escribas solamente:
+
+> "Debe saber HTML."
+
+Debes indicar **qué debe hacer con HTML**.
+
+---
+
+## 6.1 Instrucción para analizar
+
+Completa:
+
+> Antes de desarrollar, el agente debe:
+
+1. `________________________________________________`
+2. `________________________________________________`
+3. `________________________________________________`
+4. `________________________________________________`
+
+---
+
+## 6.2 Instrucción para organizar información
+
+> El agente debe organizar la información de la siguiente manera:
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+---
+
+## 6.3 Instrucción para UX
+
+> Para diseñar la experiencia de usuario, el agente debe:
+
+1. `________________________________________________`
+2. `________________________________________________`
+3. `________________________________________________`
+4. `________________________________________________`
+
+---
+
+## 6.4 Instrucción para UI
+
+> Para diseñar la interfaz, el agente debe:
+
+1. `________________________________________________`
+2. `________________________________________________`
+3. `________________________________________________`
+4. `________________________________________________`
+
+---
+
+## 6.5 Instrucción para HTML5
+
+> Al desarrollar la estructura HTML, el agente debe:
+
+1. `________________________________________________`
+2. `________________________________________________`
+3. `________________________________________________`
+4. `________________________________________________`
+
+---
+
+## 6.6 Instrucción para CSS3
+
+> Al desarrollar los estilos, el agente debe:
+
+1. `________________________________________________`
+2. `________________________________________________`
+3. `________________________________________________`
+4. `________________________________________________`
+
+---
+
+## 6.7 Instrucción para Bootstrap
+
+> Al utilizar Bootstrap, el agente debe:
+
+1. `________________________________________________`
+2. `________________________________________________`
+3. `________________________________________________`
+4. `________________________________________________`
+
+---
+
+## 6.8 Instrucción para JavaScript
+
+> JavaScript se utilizará para:
+
+`________________________________________________________`
+
+El agente deberá:
+
+1. `________________________________________________`
+2. `________________________________________________`
+3. `________________________________________________`
+
+---
+
+## 6.9 Instrucción para Responsive
+
+> El agente debe comprobar que el proyecto funcione correctamente en:
+
+* `________________ px`
+* `________________ px`
+* `________________ px`
+* `________________ px`
+
+Debe revisar especialmente:
+
+`________________________________________________________`
+
+---
+
+## 6.10 Instrucción para accesibilidad
+
+> El agente debe comprobar:
+
+* [ ] Contraste.
+* [ ] Navegación mediante teclado.
+* [ ] Textos alternativos.
+* [ ] Formularios etiquetados.
+* [ ] Encabezados.
+* [ ] Enlaces.
+* [ ] Botones.
+* [ ] Foco visible.
+* [ ] HTML semántico.
+* [ ] Otro: `________________________`
+
+### Instrucciones específicas
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+---
+
+## 6.11 Instrucción para pruebas
+
+> Antes de considerar terminado el proyecto, el agente debe comprobar:
+
+1. `________________________________________________`
+2. `________________________________________________`
+3. `________________________________________________`
+4. `________________________________________________`
+5. `________________________________________________`
+
+---
+
+## 6.12 Instrucción para corrección
+
+Cuando encuentre un error, el agente debe:
+
+1. Identificarlo.
+2. Explicar su causa.
+3. `________________________________________________`
+4. `________________________________________________`
+5. Volver a probar.
+
+---
+
+## 6.13 Instrucción para documentación
+
+El agente deberá documentar:
+
+* [ ] Requerimientos.
+* [ ] Arquitectura.
+* [ ] UX.
+* [ ] UI.
+* [ ] Desarrollo.
+* [ ] Pruebas.
+* [ ] Correcciones.
+* [ ] Accesibilidad.
+* [ ] Responsive.
+* [ ] Git/GitHub.
+* [ ] Otro: `________________________`
+
+---
+
+# 7. REGLAS DE OPERACIÓN
+
+Las reglas indican **cómo debe comportarse el agente durante todo el proyecto**.
+
+Completa las reglas específicas.
+
+### Regla 1
+
+> El agente no debe:
+
+`________________________________________________________`
+
+### Regla 2
+
+> Antes de comenzar a programar debe:
+
+`________________________________________________________`
+
+### Regla 3
+
+> Si falta información:
+
+`________________________________________________________`
+
+### Regla 4
+
+> Si encuentra un error:
+
+`________________________________________________________`
+
+### Regla 5
+
+> Antes de avanzar a otra fase debe:
+
+`________________________________________________________`
+
+### Regla 6
+
+> El código generado debe:
+
+`________________________________________________________`
+
+### Regla 7
+
+> El agente no podrá utilizar:
+
+`________________________________________________________`
+
+---
+
+# 8. PROCESO / FASES
+
+Define el orden en que trabajará el agente.
+
+Utiliza como referencia:
+
+**ANALIZAR → ORGANIZAR → DISEÑAR → DESARROLLAR → PROBAR → CORREGIR → DOCUMENTAR → ENTREGAR**
+
+Adapta las fases a tu proyecto.
+
+### Fase 1
+
+**Nombre:** `____________________________`
+
+**Objetivo:**
+
+`________________________________________________________`
+
+**Resultado esperado:**
+
+`________________________________________________________`
+
+---
+
+### Fase 2
+
+**Nombre:** `____________________________`
+
+**Objetivo:**
+
+`________________________________________________________`
+
+**Resultado esperado:**
+
+`________________________________________________________`
+
+---
+
+### Fase 3
+
+**Nombre:** `____________________________`
+
+**Objetivo:**
+
+`________________________________________________________`
+
+**Resultado esperado:**
+
+`________________________________________________________`
+
+---
+
+### Fase 4
+
+**Nombre:** `____________________________`
+
+**Objetivo:**
+
+`________________________________________________________`
+
+**Resultado esperado:**
+
+`________________________________________________________`
+
+---
+
+### Fase 5
+
+**Nombre:** `____________________________`
+
+**Objetivo:**
+
+`________________________________________________________`
+
+**Resultado esperado:**
+
+`________________________________________________________`
+
+---
+
+# 9. TOMA DE DECISIONES
+
+El agente debe tener criterios para decidir entre diferentes alternativas.
+
+### El agente debe tomar decisiones considerando:
+
+* [ ] Objetivo del proyecto.
+* [ ] Necesidades del usuario.
+* [ ] Accesibilidad.
+* [ ] Responsive.
+* [ ] Facilidad de uso.
+* [ ] Mantenibilidad.
+* [ ] Tecnologías disponibles.
+* [ ] Nivel del estudiante.
+* [ ] Otro: `________________________`
+
+### Cuando existan dos soluciones posibles, el agente deberá:
+
+`________________________________________________________`
+
+### Cuando falte información para tomar una decisión:
+
+`________________________________________________________`
+
+### Cuando una decisión cambie significativamente el proyecto:
+
+`________________________________________________________`
+
+---
+
+# 10. VERIFICACIÓN Y CORRECCIÓN
+
+El agente debe comprobar su trabajo durante el proceso.
+
+## ¿Qué debe verificar?
+
+| Elemento      | ¿Cómo se comprobará? |
+| ------------- | -------------------- |
+| Funcionalidad |                      |
+| Diseño        |                      |
+| Responsive    |                      |
+| Accesibilidad |                      |
+| HTML          |                      |
+| CSS           |                      |
+| JavaScript    |                      |
+| Navegación    |                      |
+| Formularios   |                      |
+| Enlaces       |                      |
+
+### Ciclo de corrección
+
+El agente debe utilizar:
+
+**DESARROLLAR → PROBAR → DETECTAR → CORREGIR → VOLVER A PROBAR**
+
+### ¿Qué hará si la prueba falla?
+
+`________________________________________________________`
+
+---
+
+# 11. CRITERIOS DE TERMINACIÓN
+
+El agente **NO debe considerar terminado el proyecto solamente porque el código funciona**.
+
+Completa los criterios.
+
+El proyecto estará terminado cuando:
+
+* [ ] Se cumpla el objetivo.
+* [ ] Se complete el contenido.
+* [ ] La navegación funcione.
+* [ ] El diseño sea consistente.
+* [ ] Sea responsive.
+* [ ] Cumpla los criterios de accesibilidad.
+* [ ] JavaScript funcione correctamente.
+* [ ] No existan errores conocidos.
+* [ ] Se hayan realizado pruebas.
+* [ ] Se hayan realizado correcciones.
+* [ ] La documentación esté completa.
+* [ ] El repositorio esté organizado.
+* [ ] El estudiante pueda explicar el proyecto.
+
+### Criterios adicionales de mi proyecto
+
+1. `________________________________________________`
+2. `________________________________________________`
+3. `________________________________________________`
+
+---
+
+# 12. ENTREGABLES Y EVIDENCIAS
+
+Define qué debe producir el agente y qué debe entregar el alumno.
+
+## Entregables
+
+* [ ] Proyecto funcionando.
+* [ ] Código fuente.
+* [ ] Imágenes.
+* [ ] Documentación.
+* [ ] README.
+* [ ] Repositorio GitHub.
+* [ ] Evidencias de pruebas.
+* [ ] Evidencias de responsive.
+* [ ] Evidencias de accesibilidad.
+* [ ] Evidencias de correcciones.
+* [ ] Otro: `________________________`
+
+## Evidencias
+
+### Evidencia 1
+
+**¿Qué demuestra?**
+
+`________________________________________________________`
+
+**¿Cómo se obtiene?**
+
+`________________________________________________________`
+
+### Evidencia 2
+
+**¿Qué demuestra?**
+
+`________________________________________________________`
+
+**¿Cómo se obtiene?**
+
+`________________________________________________________`
+
+### Evidencia 3
+
+**¿Qué demuestra?**
+
+`________________________________________________________`
+
+**¿Cómo se obtiene?**
+
+`________________________________________________________`
+
+---
+
+# PARTE 3. REVISIÓN DEL AGENTE
+
+Antes de utilizar tu agente, responde:
+
+| Pregunta                          |  Sí |  No |
+| --------------------------------- | :-: | :-: |
+| ¿Tiene un objetivo claro?         |  ☐  |  ☐  |
+| ¿Tiene un contexto definido?      |  ☐  |  ☐  |
+| ¿Tiene alcance?                   |  ☐  |  ☐  |
+| ¿Define sus entradas?             |  ☐  |  ☐  |
+| ¿Indica qué debe hacer?           |  ☐  |  ☐  |
+| ¿Tiene reglas?                    |  ☐  |  ☐  |
+| ¿Tiene fases?                     |  ☐  |  ☐  |
+| ¿Puede tomar decisiones?          |  ☐  |  ☐  |
+| ¿Puede verificar su trabajo?      |  ☐  |  ☐  |
+| ¿Puede corregir errores?          |  ☐  |  ☐  |
+| ¿Tiene criterios de terminación?  |  ☐  |  ☐  |
+| ¿Define entregables y evidencias? |  ☐  |  ☐  |
+
+---
+
+# PARTE 4. PROMPT DEL AGENTE
+
+Una vez completados los 12 apartados, integra la información en un único documento de configuración.
+
+Utiliza la siguiente estructura:
+
+```text
+IDENTIDAD / ROL:
+[Información del apartado 1]
+
+OBJETIVO:
+[Información del apartado 2]
+
+CONTEXTO:
+[Información del apartado 3]
+
+ALCANCE:
+[Información del apartado 4]
+
+ENTRADAS:
+[Información del apartado 5]
+
+INSTRUCCIONES DE TRABAJO:
+[Información del apartado 6]
+
+REGLAS DE OPERACIÓN:
+[Información del apartado 7]
+
+PROCESO / FASES:
+[Información del apartado 8]
+
+TOMA DE DECISIONES:
+[Información del apartado 9]
+
+VERIFICACIÓN Y CORRECCIÓN:
+[Información del apartado 10]
+
+CRITERIOS DE TERMINACIÓN:
+[Información del apartado 11]
+
+ENTREGABLES Y EVIDENCIAS:
+[Información del apartado 12]
+```
+
+## Regla final
+
+No debes generar el proyecto completo de una sola vez.
+
+El agente deberá trabajar **por fases**, solicitar la información necesaria, validar cada resultado y continuar únicamente cuando se cumplan las condiciones establecidas.
+
+### PRINCIPIO
+
+**EL ALUMNO DEFINE → EL AGENTE PLANEA → EL AGENTE EJECUTA → EL AGENTE VERIFICA → EL ALUMNO REVISA → SE CORRIGE → SE DOCUMENTA**

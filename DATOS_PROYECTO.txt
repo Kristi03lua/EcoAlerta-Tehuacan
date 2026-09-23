@@ -1,0 +1,245 @@
+DATOS_PROYECTO
+
+#1. IDENTIFICACIÓN DEL PROYECTO
+
+Antes de configurar el agente, define claramente el proyecto.
+
+### 1.1 Nombre del proyecto
+
+**Nombre:**
+
+`________________________________________________________`
+
+### 1.2 Tipo de proyecto
+
+Marca una opción:
+
+* [ ] Portafolio profesional
+* [ ] Página web empresarial
+* [ ] Página web para un negocio
+* [ ] Página web informativa
+* [ ] Tienda Front-End
+* [ ] Aplicación web
+* [ ] Otro: `____________________________`
+
+### 1.3 Descripción del proyecto
+
+Explica brevemente qué vas a desarrollar.
+
+**¿Qué vas a desarrollar?**
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+### 1.4 Problema o necesidad
+
+¿Qué necesidad pretende resolver tu proyecto?
+
+**Problema o necesidad:**
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+### 1.5 Público objetivo
+
+¿Quién utilizará o visitará tu proyecto?
+
+**Usuarios principales:**
+
+`________________________________________________________`
+
+### 1.6 Resultado esperado
+
+¿Qué esperas conseguir con el proyecto?
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+---
+
+
+# 2. OBJETIVO
+
+El objetivo debe indicar **qué resultado debe conseguir el agente**.
+
+### Preguntas de apoyo
+
+* ¿Qué debe entregar?
+* ¿Para quién?
+* ¿Qué problema resuelve?
+* ¿Qué características debe cumplir?
+
+---
+
+# 3. CONTEXTO
+
+Explica la situación en la que surge el proyecto.
+
+### Situación actual
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+### Necesidad detectada
+
+`________________________________________________________`
+
+### Usuarios
+
+`________________________________________________________`
+
+### Características importantes del proyecto
+
+`________________________________________________________`
+
+`________________________________________________________`
+
+
+# 4. ALCANCE
+
+### Pregunta clave
+
+> ¿Qué actividades o tecnologías podrían hacer que el proyecto se salga de su objetivo?
+
+`________________________________________________________`
+
+---
+
+# 5. ENTRADAS
+
+Las entradas son los datos que se le DEBE proporcionar al agente para que pueda trabajar correctamente.
+
+## 5.1 Información del proyecto
+
+| Dato             | Información |
+| ---------------- | ----------- |
+| Nombre           |             |
+| Descripción      |             |
+| Objetivo         |             |
+| Público objetivo |             |
+| Problema         |             |
+| Necesidad        |             |
+
+## 5.2 Información específica
+
+Dependiendo del proyecto, proporciona:
+
+### Información personal/profesional
+
+`________________________________________________________`
+
+### Información del negocio
+
+`________________________________________________________`
+
+### Productos o servicios
+
+`________________________________________________________`
+
+### Imágenes
+
+`________________________________________________________`
+
+### Contacto
+
+`________________________________________________________`
+
+### Redes sociales
+
+`________________________________________________________`
+
+### Información adicional
+
+`________________________________________________________`
+
+---
+
+
+
+# 8. PROCESO / FASES
+
+Define el orden en que trabajará el agente.
+
+Utiliza como referencia:
+
+**ANALIZAR → ORGANIZAR → DISEÑAR → DESARROLLAR → PROBAR → CORREGIR → DOCUMENTAR → ENTREGAR**
+
+Adapta las fases a tu proyecto.
+
+### Fase 1
+
+**Nombre:** `____________________________`
+
+**Objetivo:**
+
+`________________________________________________________`
+
+**Resultado esperado:**
+
+`________________________________________________________`
+
+---
+
+### Fase 2
+
+**Nombre:** `____________________________`
+
+**Objetivo:**
+
+`________________________________________________________`
+
+**Resultado esperado:**
+
+`________________________________________________________`
+
+---
+
+### Fase 3
+
+**Nombre:** `____________________________`
+
+**Objetivo:**
+
+`________________________________________________________`
+
+**Resultado esperado:**
+
+`________________________________________________________`
+
+---
+
+### Fase 4
+
+**Nombre:** `____________________________`
+
+**Objetivo:**
+
+`________________________________________________________`
+
+**Resultado esperado:**
+
+`________________________________________________________`
+
+---
+
+### Fase 5
+
+**Nombre:** `____________________________`
+
+**Objetivo:**
+
+`________________________________________________________`
+
+**Resultado esperado:**
+
+`________________________________________________________`
+
+---
+
+### PRINCIPIO
+
+**datos del proyecto define los requisitos → EL AGENTE PLANEA → EL AGENTE EJECUTA → EL AGENTE VERIFICA →  REVISA (agente y desarrollador) → SE CORRIGE → SE DOCUMENTA**
