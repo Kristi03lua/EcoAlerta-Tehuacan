@@ -1,0 +1,77 @@
+/* Estilos personalizados del portafolio */
+:root {
+    --primary-color: #4a148c;
+    --secondary-color: #6a1b9a;
+    --accent-color: #ab47bc;
+    --light-lila: #f3e5f5;
+    --bg-light: #fcf8ff;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: var(--bg-light); 
+    color: #212529; 
+}
+
+.hero { 
+    background: linear-gradient(135deg, #4a148c, #8e24aa); 
+    color: white; 
+    padding: 75px 0; 
+}
+
+.profile-img { 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 5px solid white; 
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3); 
+}
+
+.card-custom { 
+    border: none; 
+    border-radius: 12px; 
+    transition: transform 0.2s, box-shadow 0.2s; 
+    box-shadow: 0 4px 15px rgba(106, 27, 154, 0.08); 
+}
+
+.card-custom:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(106, 27, 154, 0.15); 
+}
+
+.badge-tech { 
+    background-color: var(--light-lila); 
+    color: var(--primary-color); 
+    font-weight: 600; 
+    padding: 6px 14px; 
+    margin: 3px; 
+    border-radius: 20px; 
+    display: inline-block; 
+}
+
+.badge-soft {
+    background-color: #e8eaf6;
+    color: #1a237e;
+    font-weight: 600;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.edu-box {
+    background-color: white;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.style-contact-box {
+    transition: transform 0.2s;
+}
+
+.style-contact-box:hover {
+    transform: translateY(-3px);
+}
