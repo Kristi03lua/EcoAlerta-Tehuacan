@@ -8,74 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <style>
-        :root {
-            --primary-color: #4a148c;    /* Lila oscuro accesible */
-            --secondary-color: #6a1b9a;  /* Lila medio */
-            --accent-color: #ab47bc;     /* Lila vibrante */
-            --light-lila: #f3e5f5;       /* Fondo lila claro */
-            --bg-light: #fcf8ff;         /* Fondo global */
-        }
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: var(--bg-light); 
-            color: #212529; 
-        }
-        .hero { 
-            background: linear-gradient(135deg, #4a148c, #8e24aa); 
-            color: white; 
-            padding: 75px 0; 
-        }
-        .profile-img { 
-            width: 200px; 
-            height: 200px; 
-            object-fit: cover; 
-            border-radius: 50%; 
-            border: 5px solid white; 
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3); 
-        }
-        .card-custom { 
-            border: none; 
-            border-radius: 12px; 
-            transition: transform 0.2s, box-shadow 0.2s; 
-            box-shadow: 0 4px 15px rgba(106, 27, 154, 0.08); 
-        }
-        .card-custom:hover { 
-            transform: translateY(-5px); 
-            box-shadow: 0 8px 25px rgba(106, 27, 154, 0.15); 
-        }
-        .badge-tech { 
-            background-color: var(--light-lila); 
-            color: var(--primary-color); 
-            font-weight: 600; 
-            padding: 6px 14px; 
-            margin: 3px; 
-            border-radius: 20px; 
-            display: inline-block; 
-        }
-        .badge-soft {
-            background-color: #e8eaf6;
-            color: #1a237e;
-            font-weight: 600;
-            padding: 8px 16px;
-            margin: 4px;
-            border-radius: 20px;
-            display: inline-block;
-        }
-        .edu-box {
-            background-color: white;
-            border-left: 5px solid var(--accent-color);
-            border-radius: 8px;
-            padding: 24px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-        }
-        .style-contact-box {
-            transition: transform 0.2s;
-        }
-        .style-contact-box:hover {
-            transform: translateY(-3px);
-        }
-    </style>
+    <!-- CSS Personalizado en carpeta css/ -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -104,7 +38,7 @@
             <div class="container">
                 <div class="row align-items-center g-4">
                     <div class="col-md-4 text-center">
-                        <img src="cristina-foto.jpg" alt="Fotografía profesional de Cristina Carrera Román, estudiante de Desarrollo de Software Multiplataforma" class="profile-img">
+                        <img src="img/cristina-foto.jpg" alt="Fotografía profesional de Cristina Carrera Román, estudiante de Desarrollo de Software Multiplataforma" class="profile-img">
                     </div>
                     <div class="col-md-8">
                         <h1 class="display-4 fw-bold">¡Hola! Soy Cristina Carrera 👋</h1>
@@ -288,17 +222,7 @@
 
     <!-- Bootstrap 5.3 Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Script de navegación interactiva -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+    <!-- Script Personalizado JS en carpeta js/ -->
+    <script src="js/main.js"></script>
 </body>
 </html>
